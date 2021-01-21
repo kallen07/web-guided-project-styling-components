@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function Friend({ info, action }) {
+export default function Friend({ bold, info, action }) {
   return (
-    <StyledFriend danger={info.name === "Devin"}>
+    <StyledFriend bold={bold} danger={info.name === "Devin"}>
       {info.name}
       <button onClick={() => action(info.id)}>See details</button>
     </StyledFriend>
