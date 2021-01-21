@@ -13,7 +13,7 @@ export default function Friend({ info, action }) {
 // OUTSIDE THE COMPONENT FUNCTION
 
 const StyledFriend = styled.div`
-  color: ${(pr) => pr.theme.primaryColor};
+  color: ${(pr) => pr.danger ? pr.theme.primaryColor} : pr.theme)};
   font-weight: bold;
   width: 60%;
   display: flex;
