@@ -32,7 +32,7 @@ const StyledFriend = styled.div`
 
   button {
     color: ${(pr) => pr.theme.tertiaryColor};
-    &hover {
+    &:hover {
       transform: scale(1.1);
     }
   }
