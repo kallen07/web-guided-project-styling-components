@@ -22,4 +22,8 @@ const StyledFriend = styled.div`
   &:hover {
     color: green;
   }
+
+  button {
+    color: grey;
+  }
 `;
