@@ -28,6 +28,7 @@ const StyledFriend = styled.div`
     background-color: cyan;
     transition: all 2.5s ease-in-out;
   }
+  transition: all 2.5s ease-in-out;
 
   button {
     color: ${(pr) => pr.theme.tertiaryColor};
