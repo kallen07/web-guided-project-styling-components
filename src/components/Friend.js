@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export default function Friend({ bold, info, action }) {
   return (
@@ -11,6 +11,13 @@ export default function Friend({ bold, info, action }) {
 }
 
 // OUTSIDE THE COMPONENT FUNCTION
+
+const kf = keyframes`
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
+`;
 
 const StyledFriend = styled.div`
   opacity: 0;
