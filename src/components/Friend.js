@@ -21,6 +21,7 @@ const kf = keyframes`
 
 const StyledFriend = styled.div`
   opacity: 0;
+  animation: ${kf} 3s ease-in-out forwards;
   color: ${(pr) => (pr.danger ? pr.theme.danger : pr.theme.primaryColor)};
   font-weight: ${(pr) => (pr.bold ? "bold" : "initial")};
   width: 60%;
