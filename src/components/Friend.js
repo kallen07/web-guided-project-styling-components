@@ -5,7 +5,7 @@ export default function Friend({ info, action }) {
   return (
     <StyledFriend>
       {info.name}
-      <button onClick={() => action(info.id)}>See details</button>
+      <Button onClick={() => action(info.id)}>See details</Button>
     </StyledFriend>
   );
 }
@@ -22,4 +22,8 @@ const StyledFriend = styled.div`
   &:hover {
     color: green;
   }
+`;
+
+const Button = styled.button`
+  color: pink;
 `;
