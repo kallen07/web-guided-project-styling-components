@@ -9,3 +9,10 @@ export default function Friend({ info, action }) {
     </div>
   );
 }
+
+// OUTSIDE THE COMPONENT FUNCTION
+
+const StyledFriend = styled.div`
+  color: red;
+  font-weight: bold;
+`;
