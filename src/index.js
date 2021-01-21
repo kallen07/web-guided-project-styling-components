@@ -12,7 +12,7 @@ import theme from "./theme/index";
 import "./styles.css";
 
 render(
-  <ThemeProvider>
+  <ThemeProvider theme={theme}>
     <App />
   </ThemeProvider>,
   document.querySelector("#root")
