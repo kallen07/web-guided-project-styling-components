@@ -31,9 +31,7 @@ export default function App() {
     <div className="container">
       <h1>My friends:</h1>
       {friends.map((fr) => {
-        return (
-          <Friend bold={bold} key={fr.id} info={fr} action={openDetails} />
-        );
+        return <Friend bold key={fr.id} info={fr} action={openDetails} />;
       })}
       {currentFriendId && (
         <Details friendId={currentFriendId} close={closeDetails} />
