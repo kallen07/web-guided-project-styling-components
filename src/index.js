@@ -12,8 +12,10 @@ import theme from "./theme/index";
 import "./styles.css";
 
 render(
-  <ThemeProvider theme={theme}>
-    <App />
-  </ThemeProvider>,
+  <Styled styled={styled}>
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
+  </Styled>,
   document.querySelector("#root")
 );
