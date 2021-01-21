@@ -28,6 +28,6 @@ const StyledFriend = styled.div`
   }
 
   button {
-    color: grey;
+    color: ${(pr) => pr.theme.tertiaryColor};
   }
 `;
