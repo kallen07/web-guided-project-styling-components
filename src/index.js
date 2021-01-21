@@ -4,7 +4,7 @@ worker.start();
 
 import React from "react";
 import { render } from "react-dom";
-import { ThemeProvider } from "styled-components";
+import { Styled, ThemeProvider } from "styled-components";
 
 import App from "./components/App";
 import theme from "./theme/index";
@@ -12,10 +12,10 @@ import theme from "./theme/index";
 import "./styles.css";
 
 render(
-  <Styled styled={styled}>
+  <Router>
     <ThemeProvider theme={theme}>
       <App />
     </ThemeProvider>
-  </Styled>,
+  </Router>,
   document.querySelector("#root")
 );
