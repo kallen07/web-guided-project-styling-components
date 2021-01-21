@@ -10,4 +10,9 @@ import App from "./components/App";
 
 import "./styles.css";
 
-render(<App />, document.querySelector("#root"));
+render(
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>,
+  document.querySelector("#root")
+);
