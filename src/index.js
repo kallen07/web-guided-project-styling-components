@@ -4,7 +4,7 @@ worker.start();
 
 import React from "react";
 import { render } from "react-dom";
-import {} from "styled-components";
+import { ThemeProvider } from "styled-components";
 
 import App from "./components/App";
 
